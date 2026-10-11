@@ -7,7 +7,7 @@ int main() {
     printf("Enter purchase amount: ");
     scanf("%f", &purchase);
 
-    printf("Enter customer type : ");
+    printf("Enter customer type (1=Student,2=Regular) : ");
     scanf("%d", &customerType);
 
     printf("Enter delivery distance in km: ");
@@ -18,11 +18,11 @@ int main() {
         {
         discount = purchase * 0.15;
         }
-         else if(customerType == 2 && purchase < 2000)
+         else if(customerType == 1 && purchase < 2000)
         {
         discount = purchase * 0.10;
         }
-         else if (customerType == 3 && purchase >= 3000)
+         else if (customerType == 2 && purchase >= 3000)
         {
         discount = purchase * 0.08;
         }
@@ -35,13 +35,16 @@ int main() {
     amount = purchase - discount;
 
 
-    if (distance <= 5) {
-        delivery = 50;
-    }
- else if (distance <= 10) {
+    if (distance <= 5)
+    {
+        delivery = 40;
+    } 
+    else if (distance <= 15)
+    {
         delivery = 100;
     }
-    else {
+    else 
+    {
         delivery = 150;
     }
 
@@ -53,7 +56,7 @@ int main() {
     printf("\nDiscount Amount: Rs. %.2f", discount);
     printf("\nAmount After Discount: Rs. %.2f", amount);
     printf("\nDelivery Charge: Rs. %.2f", delivery);
-    printf("\nFinal Payable Amount: Rs. %.2f\n", finalAmount);
+    printf("\nFinal Amount: Rs. %.2f\n", finalAmount);
 
     return 0;
 }
