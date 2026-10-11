@@ -37,15 +37,15 @@ int main() {
 
     if (distance <= 5)
     {
-        delivery charges = 40;
+        delivery = 40;
     } 
     else if (distance <= 15)
     {
-        delivery charges = 100;
+        delivery = 100;
     }
     else 
     {
-        delivery charges = 150;
+        delivery = 150;
     }
 
 
