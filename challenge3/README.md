@@ -11,3 +11,4 @@
 11. Calculate the final payable amount:
 12. Final Amount = Amount After Discount + Delivery Charge.
 13. Display the purchase amount, discount, amount after discount, delivery charge, and final payable amount.
+14. stop.
