@@ -7,7 +7,7 @@ int main() {
     printf("Enter purchase amount: ");
     scanf("%f", &purchase);
 
-    printf("Enter customer type (1=Student, 2=Regular): ");
+    printf("Enter customer type : ");
     scanf("%d", &customerType);
 
     printf("Enter delivery distance in km: ");
@@ -18,11 +18,11 @@ int main() {
         {
         discount = purchase * 0.15;
         }
-         else if(customerType == 1 && purchase < 2000)
+         else if(customerType == 2 && purchase < 2000)
         {
         discount = purchase * 0.10;
         }
-         else if (customerType == 2 && purchase >= 3000)
+         else if (customerType == 3 && purchase >= 3000)
         {
         discount = purchase * 0.08;
         }
