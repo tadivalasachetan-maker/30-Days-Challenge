@@ -32,7 +32,7 @@ int main()
             largeTotal = largeTotal + amount;
         }
     }   while (amount != 0);
-    printf("\n--- Expense Summary ---\n");
+    printf("\n--- Total Expense ---\n");
     printf("Small count = %d\n", small);
     printf("Small total = ₹%d\n", smallTotal);
     printf("Medium count = %d\n", medium);
